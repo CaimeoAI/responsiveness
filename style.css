@@ -17,21 +17,64 @@ body
     color: blue;
 }
 
+p
+{
+    text-align: center;
+    padding: 10%;
+    font-size: 2rem;
+    visibility: hidden;
+}
+
 .example
 {
+    float: left;
+    display: inline;
     font-size: 8rem;
 }
 
 .next_example
 {
+    float:right;
+    display: inline;
     font-size: 4rem;
 }
 
-@media all and (max-width:500px)
+/*! Screen specifies the device, 'and' is an operator. So conditions have to be true for the changes to apply */
+
+@media screen and (max-width:800px)
 {
     body 
     {
         color: red;
     }
 
+}
+
+@media screen and (max-width:500px)
+{
+    body
+    {
+        color: green;
+    }
+}
+
+@media (orientation: portrait)
+{
+    .portrait
+    {
+        visibility: visible;
+    }
+
+    p
+    {
+        padding: 30%;
+    }
+}
+
+@media (orientation: landscape)
+{
+    .landscape
+    {
+        visibility: visible;
+    }
 }
