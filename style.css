@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root
+{
+    font-size: 10px;
+}
+
+body
+{
+    color: blue;
+}
+
+.example
+{
+    font-size: 8rem;
+}
+
+.next_example
+{
+    font-size: 4rem;
+}
+
+@media all and (max-width:500px)
+{
+    body 
+    {
+        color: red;
+    }
+
+}
